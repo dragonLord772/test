@@ -1,0 +1,18 @@
+CarDriver:
+  table: car_driver
+  columns:
+    id:
+      type: integer
+      autoincrement: true
+      primary: true
+    car:
+      type: integer
+      primary: true
+    driver:
+      type: integer
+      primary: true
+  indexes:
+    IDX_CAR_DRIVER_CAR_ID:
+      columns: [car]
+    IDX_CAR_DRIVER_DRIVER_ID:
+      columns: [driver]
